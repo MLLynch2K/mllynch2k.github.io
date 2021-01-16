@@ -19,6 +19,7 @@ section {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 60px;
@@ -40,13 +41,20 @@ nav ul li a {
   font-weight: 700;
 }
 
+nav ul li a:hover {
+	background: grey;
+	color: #FFFFFF;
+	border-radius: 15px;
+}
+
 /*Hero Styles*/
 .photo {
-  height: 530px;
-  position: absolute;
-  bottom: 40px;
-  left: 75%;
-  transform: translateX(-75%);
+	max-width: 100%;
+	height: auto;
+  	position: absolute;
+  	bottom: 40px;
+  	left: 75%;
+  	transform: translateX(-75%);
 }
 
 .text-container p:nth-child(1) {
@@ -76,38 +84,11 @@ nav ul li a {
   line-height: 0px;
 }
 
-.text-container button {
-  width: 130px;
-  height: 42px;
-  border-radius: 10px;
-  font-family: calibri;
-  font-weight: bold;
-  font-size: 14px;
-  outline: none;
-  margin: 0px 10px;
-}
-
 .text-container {
   position: absolute;
   left: 13%;
   top: 42%;
   transform:translate(-13%,-42%);
-}
-
-.down-resume {
-  background-color: #0B0B0B;
-  color: #ffffff;
-  border: none;
-  border-radius: 25px;
- 
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-
-button:active {
-  transform:scale(1.1);
-  width: 200px;
 }
 
 /*About Me Styles*/
@@ -154,7 +135,6 @@ button:active {
 /*Project Styles*/
 .projects {
 	height:600px;
-	background-color:#ffffff;
 	padding: 2% 10% 0px 10%;
 }
 
@@ -162,7 +142,7 @@ button:active {
 	font-family: calibri;
 	font-weight:bold;
 	color:#1d1c1c;
-	font-size:30px;
+	font-size:60px;
 	line-height:0px;
 }
 
@@ -187,11 +167,13 @@ button:active {
 .box-container{
 	display:flex;
 	justify-content:space-between;
+	margin: 30px;
 }
 
 .box-1,.box-2,.box-3{
 	width: 300px;
 	height:320px;
+	padding: 10px 10px 10px 10px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow:2px 2px 18px rgba(0,0,0,0.3);
@@ -203,16 +185,10 @@ button:active {
 }
 
 .box-1 {
-  background-image: url("/assets/images/find-food.png");
+  background-image: url("/assets/images/findfood.png");
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-image {
-  display: block;
-  width: 40px;
-  height: 40px;
 }
 
 .box-1 span,
@@ -256,10 +232,71 @@ image {
 	background-color: #FFFFFF;
 	border:none;
 	outline: none;
-  border-radius:5px;
-  padding: 5px;
+  	border-radius:5px;
+	padding: 10px;
+	display: inline-block;
 }
 
+/*Social Bar Styles*/
+.social-icons a{
+	width:40px;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+}
+.social-icons{
+	display: flex;
+}
+
+.social-icons i,.social i{
+	color:#000000;
+}
+
+.social-icons a:hover{
+	background-color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+
+.social{
+	position: fixed;
+	top:50%;
+	right:0px;
+	transform:translateY(-50%);
+}
+.social a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50px;
+	height:50px;
+	margin:0px;
+	padding: 0px;
+	line-height:0px;
+	background-color:#FFFFFF;
+	border:1px solid #CBCBCB;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+	background-color:#000000;
+	transition:all ease 0.5s;
+}
+
+.social i{
+	font-size:20px;
+	color:#2B2B2B;
+}
+
+/*Media */
 @media(max-width:1000px){
 	*{
 		box-sizing: border-box;
