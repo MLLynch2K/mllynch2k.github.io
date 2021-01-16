@@ -98,10 +98,16 @@ nav ul li a {
   background-color: #0B0B0B;
   color: #ffffff;
   border: none;
+  border-radius: 25px;
+ 
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
 
 button:active {
   transform:scale(1.1);
+  width: 200px;
 }
 
 /*About Me Styles*/
@@ -113,6 +119,7 @@ button:active {
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
   display: flex;
   margin: auto;
+  padding: 20px;
   position: relative;
   justify-content: space-evenly;
   align-items: center;
@@ -198,6 +205,8 @@ button:active {
 .box-1 {
   background-image: url("/assets/images/find-food.png");
   background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 image {
