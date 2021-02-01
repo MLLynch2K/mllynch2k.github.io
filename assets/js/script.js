@@ -1,3 +1,4 @@
+//Social Bar
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.toggle').click(function(){
