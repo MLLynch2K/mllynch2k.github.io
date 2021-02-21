@@ -11,41 +11,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- Navigation Section -->
-    <section>
-      <nav>
-        <h1>Michele Lee Lynch</h1>
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li>
-            <a href="assets/images/Michele Lee Lynch Resume.pdf">Resume</a>
-          </li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </nav>
-    </section>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About Me</a>
+      <a href="#">Stack</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact Me</a>
+    </div>
+  
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Michele Lee Lynch</span>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+
+
 
     <!-- About Me Section -->
-    <!-- Skills Section -->
-
+    <!-- Stack Section -->
+    <!-- Projects Section -->
+    <!-- Contact Section -->
     <!-- Social Bar Section -->
-
-    <div class="social">
-      <a href="https://github.com/MLLynch2K"><i class="fab fa-GitHub"></i></a>
-      <a href="https://www.linkedin.com/in/michele-lee-lynch-a03877145"
-        ><i class="fab fa-LinkedIn"></i
-      ></a>
-    </div>
-
     <script type="text/javascript" src="/assets/js/script.js"></script>
   </body>
-
-  <footer></footer>
 </html>
